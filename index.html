@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Demo</title>
+    <script src="https://unpkg.com/highlight.run"></script>
+    <script>
+        H.init('56gl9g91', { // Get your project ID from https://app.highlight.io/setup
+            environment: 'production',
+            version: 'commit:abcdefg12345',
+            backendUrl: "https://monitoring-graph.foothilltech.net/public",
+            networkRecording: {
+                enabled: true,
+                recordHeadersAndBody: true,
+                urlBlocklist: [
+                    // insert full or partial urls that you don't want to record here
+                    // Out of the box, Highlight will not record these URLs (they can be safely removed):
+                    "https://www.googleapis.com/identitytoolkit",
+                    "https://securetoken.googleapis.com",
+                ],
+            },
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Hello from Highlight Demo 😊</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur adipisci aperiam veritatis! Eaque quasi
+        perferendis dignissimos fugiat error, id aliquam eum iste, veniam libero enim itaque blanditiis nesciunt quas
+        molestiae qui! Ullam quaerat odio odit. Corporis, natus esse, cupiditate blanditiis reiciendis atque accusantium
+        non dignissimos nobis, perspiciatis quibusdam laudantium vel!</p>
+
+</body>
+
+</html>
